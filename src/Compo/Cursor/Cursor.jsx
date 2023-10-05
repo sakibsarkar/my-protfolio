@@ -9,8 +9,8 @@ const Cursor = () => {
     useEffect(() => {
 
         window.addEventListener('mousemove', function (e) {
-            setCursorX(e.clientX)
-            setCursorY(e.clientY)
+            setCursorX(e.pageX)
+            setCursorY(e.pageY)
             setIsMouseOnscreen(true)
 
 

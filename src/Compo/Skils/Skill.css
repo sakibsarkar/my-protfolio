@@ -1,0 +1,28 @@
+.skill {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    color: white;
+    flex-direction: column;
+    gap: 20px;
+    padding: 80px 0 0 0;
+    position: relative;
+    border-top: 3px solid #8b8b8b;
+}
+
+.skill h1 {
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.skillImage {
+    transition: 0.2s;
+    position: absolute;
+    height: 30%;
+    top: 0;
+    opacity: 0;
+    transition: 0.4s;
+}
