@@ -1,9 +1,10 @@
 import "./Nav.css";
 import { AiFillFacebook, AiFillGithub, AiFillLinkedin, AiOutlineInstagram } from "react-icons/ai";
+import { NavLink } from "react-router-dom";
 
 const Nav = () => {
     return (
-        <>
+        <div>
 
             <div>
                 <nav>
@@ -17,7 +18,13 @@ const Nav = () => {
                 </nav>
             </div>
 
-        </>
+            <div className="openSideBar">
+                <NavLink className={({ isActive }) => isActive ? "current" : "Links"} to={"/"}>Home</NavLink>
+                <NavLink className={({ isActive }) => isActive ? "current" : "Links"} to={"/projects"}>Projects</NavLink>
+                <NavLink className={({ isActive }) => isActive ? "current" : "Links"} to={"/contact"}>Contact</NavLink>
+            </div>
+
+        </div>
     );
 };
 

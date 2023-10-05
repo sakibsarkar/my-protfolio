@@ -10,13 +10,37 @@
 .sideLinks {
     font-size: 20px;
     color: white;
-    padding: 5px 10px;
+    padding: 10px;
 }
 
 .active {
     background-color: #4ce19e;
     color: rgb(255, 255, 255);
-    padding: 10px;
     transition: all 0.8s;
     clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 51%, 0% 0%);
+}
+
+
+
+@media screen and (max-width: 400px) {
+    .sideBarCon {
+        display: none;
+    }
+
+
+}
+
+@media screen and (min-width: 401px) and (max-width: 700px) {
+    .sideBarCon {
+        display: none;
+    }
+
+
+}
+
+
+@media screen and (min-width: 701px) and (max-width: 899px) {
+    .sideBarCon {
+        display: none;
+    }
 }

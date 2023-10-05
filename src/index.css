@@ -4,7 +4,54 @@
     font-family: 'IBM Plex Mono', monospace;
 }
 
+#root {
+    padding: 0 250px 100px 250px;
+}
+
 ::selection {
     background-color: rgb(126, 125, 125);
     color: white;
 }
+
+@media screen and (max-width: 640px) {
+
+    #root {
+        padding: 0 30px 100px 30px;
+    }
+
+    .cursor {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 640px) and (max-width: 700px) {
+    #root {
+        padding: 0 80px 80px 100px;
+    }
+
+    .cursor {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 701px) and (max-width: 899px) {
+    #root {
+        padding: 0 80px 80px 100px;
+    }
+
+    .cursor {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1280px) {
+    #root {
+        padding: 0 150px 100px 150px;
+    }
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1550px) {}
+
+@media screen and (min-width: 1441px) and (max-width: 1920px) {}
+
+@media screen and (min-width: 1921px) {}
