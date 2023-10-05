@@ -1,0 +1,22 @@
+.sideBarCon {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: fixed;
+    left: 0;
+    width: 150px;
+}
+
+.sideLinks {
+    font-size: 20px;
+    color: white;
+    padding: 5px 10px;
+}
+
+.active {
+    background-color: #4ce19e;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    transition: all 0.8s;
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 51%, 0% 0%);
+}
